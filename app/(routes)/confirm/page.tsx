@@ -27,7 +27,7 @@ export default function Confirm() {
         하나은행만의 전문 PB와 1대 1 상담을 언제든 신청할 수 있습니다.
       </div>
       {data ? (
-        <div className='bg-[#F2F9FF] rounded-lg drop-shadow-md px-24 py-16'>
+        <div className='bg-[#D6E8F6] rounded-lg drop-shadow-md px-24 py-16 mt-10'>
           <div className='flex justify-between items-center my-2'>
             <div className='flex gap-2 items-center ml-3'>
               <p className='font-semibold'>카테고리</p>
