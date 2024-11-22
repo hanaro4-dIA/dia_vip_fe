@@ -12,10 +12,10 @@ async function isLogin() {
 export default function Nav() {
   return (
     <div className='flex justify-between items-center w-full shadow-[0_4px_6px_0px_rgba(0,0,0,0.1)]'>
-  <Link href='/'>
-    <Image src={logo} alt='nav_logo' className='mx-5 w-1/5' />
-  </Link>
-  <SignInOut isLogin={isLogin} />
-</div>
+      <Link href='/'>
+        <Image src={logo} alt='nav_logo' className='mx-5 w-1/5' />
+      </Link>
+      <SignInOut isLogin={isLogin} />
+    </div>
   );
 }
