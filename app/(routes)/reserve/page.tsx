@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/Button';
 import CalendarPopup from '@/components/CalendarPopup';
 import { formatDate } from '@/utils/date';
 import { useRouter } from 'next/navigation';
@@ -165,9 +166,11 @@ export default function Reserve() {
               />
             </div>
             <div className='flex justify-end'>
-              <button type='submit' className='bg-slate-300 p-2 rounded-lg'>
-                예약하기
-              </button>
+              <Button
+                type='submit'
+                text='예약하기'
+                className='bg-gray-300 hover:bg-gray-400 hover:text-white'
+              />
             </div>
           </form>
         </div>

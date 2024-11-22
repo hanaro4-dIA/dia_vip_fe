@@ -1,14 +1,16 @@
 type Props = {
   type: 'submit' | 'reset' | 'button';
   text: string;
-  bg: string;
+  className?: string;
+  onClick?: () => void;
 };
 
-export default function Button({ type, text, bg }: Props) {
+export default function Button({ onClick, type, text, className }: Props) {
   return (
     <button
       type={`${type}`}
-      className={` ${bg} p-2 rounded-lg`}
+      onClick={onClick}
+      className={`p-2 rounded-lg ${className}`}
     >
       {text}
     </button>

@@ -66,11 +66,18 @@ export default function Confirm() {
               </div>
             </div>
             <div className='flex justify-end gap-2'>
-              <button onClick={cancel} className='bg-gray-300 p-2 rounded-lg'>
-                신청 취소
-              </button>
+              <Button
+                onClick={cancel}
+                className='bg-gray-300 hover:bg-gray-400 hover:text-white'
+                text='신청 취소'
+                type='button'
+              />
               <form action='/consultingList' className='text-white'>
-                <Button type='submit' text='목록으로' bg='bg-[#3F6886]' />
+                <Button
+                  type='submit'
+                  text='목록으로'
+                  className='bg-[#3F6886] hover:bg-[#2c4a5f] hover:text-white'
+                />
               </form>
             </div>
           </div>

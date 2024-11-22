@@ -4,6 +4,7 @@ import { getSession, mySignOut } from '@/actions/myauth';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import Button from './Button';
 import Notification from './Notification';
 
 export default function SignInOut({
@@ -33,16 +34,16 @@ export default function SignInOut({
           </Link>
           <Notification />
         </div>
-        <button
+        <Button
           onClick={async () => {
             localStorage.removeItem('dIA_VIP');
             await mySignOut();
             router.refresh();
           }}
-          className='text-center text-[#525463] border h-10 bg-[#858899]/20 px-4 py-2 my-4 mx-7 rounded-lg'
-        >
-          로그아웃
-        </button>
+          className='h-10 px-4 py-2 my-4 mx-7 bg-gray-300 hover:bg-gray-400 hover:text-white'
+          text='로그아웃'
+          type='button'
+        />
       </div>
     );
 
