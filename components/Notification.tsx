@@ -24,7 +24,7 @@ export default function Notification() {
     <div className='relative inline-block'>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='relative p-2 text-gray-700 hover:text-gray-900 focus:outline-none'
+        className='relative p-2 hover:text-[#3F6886] focus:outline-none'
       >
         <BellIcon className='h-6 w-6' />
         {notifications.filter((notification) => !notification.read).length >
