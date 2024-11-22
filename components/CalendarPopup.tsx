@@ -30,7 +30,7 @@ export default function CalendarPopup({
     <div style={{ position: 'relative', display: 'inline-block' }}>
       <button
         onClick={toggleCalendar}
-        className='flex items-center bg-white rounded-lg p-1 pr-2 w-fit min-w-40 gap-1 justify-center focus:outline-sky-50 focus:outline-none'
+        className='flex items-center bg-white rounded-lg p-1.5 pr-2 w-fit min-w-40 gap-1 justify-center focus:outline-sky-50 focus:outline-none'
       >
         <span className='w-full'>
           {selectedDate

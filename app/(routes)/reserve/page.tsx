@@ -111,7 +111,7 @@ export default function Reserve() {
               </div>
               <div className='flex gap-2 items-center'>
                 <p className='font-semibold'>PB</p>
-                <p className='bg-white rounded-lg px-8 py-1'>안유진</p>
+                <p className='bg-white rounded-lg px-8 py-1.5'>안유진</p>
               </div>
             </div>
             <div className='flex justify-between items-center my-2'>
@@ -127,7 +127,7 @@ export default function Reserve() {
                   required
                   ref={timeRef}
                   defaultValue=''
-                  className='flex justify-center gap-1 items-center bg-white rounded-lg p-1.5 pr-2 ml-2 w-36 text-center focus:outline-none focus:outline-sky-50'
+                  className='flex justify-center gap-1 items-center bg-white rounded-lg py-[9px] pr-2 ml-2 w-36 text-center focus:outline-none focus:outline-sky-50'
                 >
                   <option value='' disabled>
                     00 : 00
@@ -141,7 +141,7 @@ export default function Reserve() {
               </div>
               <div className='flex gap-2 items-center'>
                 <p className='font-semibold'>고객명</p>
-                <p className='bg-white rounded-lg px-8 py-1'>김현수</p>
+                <p className='bg-white rounded-lg px-8 py-1.5'>김현수</p>
               </div>
             </div>
             <div className='flex gap-3 items-center w-full my-2'>
@@ -151,7 +151,7 @@ export default function Reserve() {
                 maxLength={50}
                 ref={titleRef}
                 type='text'
-                className='bg-white rounded-lg p-1 w-full focus:outline-none focus:outline-sky-50'
+                className='bg-white rounded-lg p-1.5 w-full focus:outline-none focus:outline-sky-50'
               />
             </div>
             <div className='flex gap-3 items-center w-full my-2'>
@@ -161,7 +161,7 @@ export default function Reserve() {
                 ref={detailRef}
                 rows={10}
                 maxLength={300}
-                className='bg-white rounded-lg p-1 w-full overflow-y-auto resize-none focus:outline-none focus:outline-sky-50'
+                className='bg-white rounded-lg p-1.5 w-full overflow-y-auto resize-none focus:outline-none focus:outline-sky-50'
               />
             </div>
             <div className='flex justify-end'>

@@ -32,32 +32,36 @@ export default function Confirm() {
             <div className='flex justify-between items-center my-2'>
               <div className='flex gap-2 items-center ml-3'>
                 <p className='font-semibold'>카테고리</p>
-                <p className='bg-white rounded-lg p-1 w-72'>{data.category}</p>
+                <p className='bg-white rounded-lg p-1.5 w-72'>
+                  {data.category}
+                </p>
               </div>
               <div className='flex gap-2 items-center'>
                 <p className='font-semibold'>PB명</p>
-                <p className='bg-white rounded-lg px-8 py-1'>안유진</p>
+                <p className='bg-white rounded-lg px-8 py-1.5'>안유진</p>
               </div>
             </div>
             <div className='flex justify-between items-center my-2'>
               <div className='flex gap-2 items-center ml-3'>
                 <p className='font-semibold'>희망일시</p>
-                <p className='bg-white rounded-lg p-1 w-72'>
+                <p className='bg-white rounded-lg p-1.5 w-72'>
                   {`${data.date.slice(0, 4)}.${data.date.slice(4, 6)}.${data.date.slice(6, 8)} ${data.time}`}
                 </p>
               </div>
               <div className='flex gap-2 items-center'>
                 <p className='font-semibold'>고객명</p>
-                <p className='bg-white rounded-lg px-8 py-1'>김현수</p>
+                <p className='bg-white rounded-lg px-8 py-1.5'>김현수</p>
               </div>
             </div>
             <div className='flex gap-3 items-center w-full my-2'>
               <p className='w-20 text-right font-semibold'>제목</p>
-              <div className='bg-white rounded-lg p-1 w-full'>{data.title}</div>
+              <div className='bg-white rounded-lg p-1.5 w-full'>
+                {data.title}
+              </div>
             </div>
             <div className='flex gap-3 items-center w-full my-2'>
               <label className='w-20 text-right font-semibold'>내용</label>
-              <div className='bg-white rounded-lg p-1 w-full min-h-96 overflow-y-auto'>
+              <div className='bg-white rounded-lg p-1.5 w-full min-h-96 overflow-y-auto'>
                 {data.detail}
               </div>
             </div>

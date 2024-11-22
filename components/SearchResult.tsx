@@ -66,7 +66,7 @@ export default function SearchResult({
   }, [filters, searchResults, applyFilters]);
 
   return (
-    <div className='border border-black bg-white w-full h-96 overflow-y-auto p-2'>
+    <div className='border border-sky-50 bg-white w-full h-96 overflow-y-auto p-2 mt-5'>
       <table className='table-auto w-full'>
         <thead>
           <tr>
