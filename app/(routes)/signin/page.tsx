@@ -1,6 +1,7 @@
 'use client';
 
 import { authenticate } from '@/actions/myauth';
+import Button from '@/components/Button';
 import { LockClosedIcon, UserIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -73,13 +74,12 @@ function SigninCard() {
 
 function LoginButton({ isLoading }: { isLoading: boolean }) {
   return (
-    <button
+    <Button
       type='submit'
       className='bg-[#F2F9FF] w-full h-16 rounded-lg text-lg font-medium hover:opacity-80 mb-5 border border-[#B4B4B4] shadow-[2px_2px_0px_rgba(0,0,0,0.25)]'
       disabled={isLoading}
-    >
-      {isLoading ? '로그인 중...' : '로그인'}
-    </button>
+      text='로그인'
+    />
   );
 }
 
