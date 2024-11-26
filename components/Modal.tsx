@@ -62,7 +62,7 @@ export default function Modal({ onClose }: ModalProps) {
                 #채권
               </span>
             </div>
-            <div className='space-y-2 text-sm mt-7 font-semibold bg-[#D9D9D9] bg-opacity-40 p-3 rounded-xl'>
+            <div className='space-y-2 text-sm mt-3 font-normal bg-[#D9D9D9] bg-opacity-40 p-3 rounded-xl'>
               <div className='flex items-center gap-2'>
                 <PhoneCall className='w-4 h-4' />
                 02-1234-1234
@@ -98,7 +98,7 @@ export default function Modal({ onClose }: ModalProps) {
           </div>
         </div>
 
-        <div className='mt-6 text-right space-x-2'>
+        <div className='mt-4 text-right space-x-2'>
           <Button
             type='button'
             onClick={onReserve}

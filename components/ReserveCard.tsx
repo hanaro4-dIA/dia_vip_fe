@@ -10,7 +10,7 @@ export default function ReserveCard() {
         </div>
       </Link>
 
-      <div className='flex flex-col p-4 space-y-2'>
+      <div className='flex flex-col justify-center p-6 space-y-2'>
         <div className='flex items-center space-x-2 border border-blue-100 text-gray-700 hover:bg-blue-50 p-2 rounded-lg font-semibold shadow-sm'>
           <PhoneCall className='h-6 w-6' />
           <div className='w-full'>
